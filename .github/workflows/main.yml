@@ -45,3 +45,26 @@ jobs:
         with:
           name: Build
           path: build
+
+  deployPages:
+    needs: build
+    name: Deploy to github Pages
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      
+      - uses: actions/dowload-artifact@v2
+        with:
+          name: Build
+          path: build
+
+      - name: Display structure of root files
+        run: ls -R
+        working-directory: build/WebGL
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.4
+        with:
+          branch: gh-pages
+          folder: build/wWebGL
