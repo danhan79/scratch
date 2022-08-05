@@ -362,6 +362,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1442249066}
   - component: {fileID: 1442249065}
+  - component: {fileID: 1442249067}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -410,8 +411,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 0.68906313, g: 0.14901957, b: 0.8509804, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 7255cf0abeef0184cb4fd8c8bd584016, type: 3}
+  m_Color: {r: 0.14901957, g: 0.71729064, b: 0.8509804, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -436,3 +437,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1442249067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442249064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d31ede6d7ae5b0479356e0c52855967, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 10
+  maxMoveSPeed: 10
+  maxMoveSpeed: 10
+  smoothTime: 1.3
+  direction: {x: 0, y: 0}
+  totalDistance: {x: 0, y: 0}
+  offset: 3
+  turnSpeed: 55
+  maxTurnSpeed: 190
+  smoothVelocity: 0
